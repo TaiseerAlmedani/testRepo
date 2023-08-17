@@ -1,0 +1,96 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: whitesmoke;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container{
+  width: 960px;
+  background-color: white;
+  margin: 0 auto;
+}
+img{
+  width: 250px;
+}
+h1, h2,  h3, h4, p{
+  padding: 20px;
+}
+h1{
+  text-align: center;
+  text-shadow: 0 0 2px red;
+  text-decoration: line-through;
+}
+p{
+  line-height: 2;
+}
+ul{
+  /* border: solid 2px red; */
+  padding: 20px 0 40px 20px;
+  margin: 0 10px;
+}
+form{
+  padding: 20px;
+}
+form *:not(span) {
+  padding: 10px;
+}
+span{
+  color: #6C63FF;
+}
+footer{
+  text-align: center; 
+  /*! font-weight: 100 -> 400 normal; */
+  /*! font-weight: 400 -> 700 bold; */
+  /*! font-weight: 700 -> 900 bolder; */
+}
+
+.background{
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
+  background-color: #6C63FF;
+}
+.background:hover{
+  background-color: yellow;
+}
+a:link{
+  color: red;
+}
+a:hover{
+  color: blue;
+  font-size: 20px;
+}
+a:active{
+  color: forestgreen;
+}
+.red{
+color: red;
+}
+/* .colord::first-line{
+  color: red;
+}
+.colord::first-letter{
+  color: black;
+}
+li::marker{
+  color: #6C63FF;
+}
+::selection{
+  background-color: yellow;
+  color: red;
+} */
+.psudo::before{
+  content: 'b';
+  display: inline;
+  color: red;
+}
+.psudo::after{
+content: "e";
+display: inline;
+color: red;
+}
+::placeholder{
+  color: blue;
+}
